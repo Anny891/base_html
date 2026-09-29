@@ -17,6 +17,97 @@
         </header>
         <main>
             <p> This is the about page of my website. Here you can find more information about us.</p>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="nombre">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for ="password">Password:</label>
+
+                <input type="password" id="password" name="password">
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <input type="checkbox" id="subscribe" name="subscribe">
+                <label for="subscribe">Subscribe to newsletter</label>
+            
+                
+                <input type="radio" id="option1" name="options" value="option1">
+                <label for="option1">Option 1</label>
+                <input type="radio" id="option2" name="options" value="option2">
+                <label for="option2">Option 2</label>
+               
+                
+                 
+                 <textarea id="message" name="message" rows="4" cols="50"></textarea>
+
+                 <input type="number" id="file" name="file" min="1" max="10">
+                 <input type="date" id="date" name="date">
+
+                 <input type="file" id="file" name="file">
+                 <input type="color" id="color" name="color">
+                 <input type="range" id="range" name="range" min="0" max="100">
+
+                 <input type="tel" id="phone" name="phone">
+                 <input type="time" id="time" name="time">
+                 <input type="search" id="search" name="search">
+
+                 <input type="url" id="website" name="website">
+
+                 <button type="submit">Submit</button>
+
+            </form>
+
+            <label for="username">Datos de salida</label>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Password</th>
+                        <th>Genero</th>
+                        <th>Suscripcion</th>
+                        <th>Opcion</th>
+                        <th>Mensaje</th>
+                        <th>Numero</th>
+                        <th>Fecha</th>
+                        <th>Archivo</th>
+                        <th>Color</th>
+                        <th>Rango</th>
+                        <th>Telefono</th>
+                        <th>Hora</th>
+                        <th>Busqueda</th>
+                        <th>Sitio web</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td >Anny</td>
+                        <td> oyuelaf27@unah.hn</td>
+                        <td id="passwordOutput"></td>
+                        <td id="genderOutput"></td>
+                        <td id="subscribeOutput"></td>
+                        <td id="optionsOutput"></td>
+                        <td id="messageOutput"></td>
+                        <td id="numberOutput"></td>
+                        <td id="dateOutput"></td>
+                        <td id="fileOutput"></td>
+                        <td id="colorOutput"></td>
+                        <td id="rangeOutput"></td>      
+                        <td id="phoneOutput"></td>
+                        <td id="timeOutput"></td>
+                        <td id="searchOutput"></td>
+                        <td id="websiteOutput"></td>
+                    </tr>
+                </tbody>
+
+
+            </table>
         </main>
         <footer>
             <p>&copy; 2023 My Website. All rights reserved</p>
