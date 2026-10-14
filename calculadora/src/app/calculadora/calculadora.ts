@@ -1,9 +1,9 @@
 import { Component, signal} from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 
 
 @Component({
-  imports: [],
+  imports: [FormsModule],
   selector: 'app-calculadora',
   styleUrl: './calculadora.css',
   templateUrl: './calculadora.html',
