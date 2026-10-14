@@ -1,1 +1,11 @@
-<p>calculadora works!</p>
+<p>calculadora</p>
+
+<label>Primer número:</label>
+<input type="number" (input)="a = +$any($event.target).value">
+
+<label>Segundo número:</label>
+<input type="number" (input)="b = +$any($event.target).value">
+
+<button (click)="sumar()">Sumar</button>
+
+<p>Resultado: {{ resultado() }}</p>

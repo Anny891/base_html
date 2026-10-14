@@ -1,0 +1,22 @@
+
+h2 {
+  color: blue;
+  text-align: center;
+}
+
+
+button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+:host {
+  display: block;
+  background-color: lightblue;
+  padding: 20px;
+  border-radius: 10px;
+}
+

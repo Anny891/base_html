@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, signal} from '@angular/core';
+
+
 
 @Component({
   imports: [],
@@ -7,7 +9,11 @@ import { Component } from '@angular/core';
   templateUrl: './calculadora.html',
 })
 export class Calculadora {
-  readonly a = 0;
-  readonly b = 0;
+   a = 0;
+   b = 0;
   readonly resultado = signal(0);
+
+  sumar() {
+    this.resultado.set(this.a + this.b);
+  }
 }
