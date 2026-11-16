@@ -4,6 +4,8 @@
 
 <h1>Personas registradas</h1>
 
+<p><a href="{{ route('personas.create') }}">Crear persona</a></p>
+
 <table>
     <thead>
         <tr>
