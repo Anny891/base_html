@@ -21,3 +21,19 @@ El archivo `resources/views/personas/index.blade.php` se encarga de generar el H
 ## Resultado
 
 Al ingresar al sistema mediante el login, se puede acceder al listado de personas, donde se muestran diez registros ficticios. Además, el sistema protege la ruta para evitar que usuarios sin iniciar sesión accedan a la información.
+
+Guía 4: Editar y actualizar personas
+
+En esta práctica se implementó la funcionalidad de editar y actualizar los datos de personas registradas en el sistema, conservando su ID.
+
+Funcionamiento de los archivos
+
+routes/web.php: Define las rutas que reciben las peticiones para editar y actualizar personas y las dirige al controlador correspondiente.
+
+PersonaController.php: Procesa las peticiones y utiliza el modelo Persona para buscar y actualizar los registros en la base de datos.
+
+Persona.php: Es el modelo que representa la tabla de personas y permite interactuar con sus datos.
+
+edit.blade.php: Genera el formulario HTML de edición, mostrando los datos actuales de la persona.
+
+index.blade.php: Muestra el listado de personas y el enlace para editar cada registro.
