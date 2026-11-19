@@ -37,3 +37,57 @@ Persona.php: Es el modelo que representa la tabla de personas y permite interact
 edit.blade.php: Genera el formulario HTML de edición, mostrando los datos actuales de la persona.
 
 index.blade.php: Muestra el listado de personas y el enlace para editar cada registro.
+
+5. Eliminar registros y verificar el CRUD
+
+Descripción
+
+En esta práctica se completó el CRUD de personas en Laravel, agregando la funcionalidad de eliminar registros. Se implementó un botón de eliminación con confirmación para evitar borrar información por accidente.
+
+Conceptos utilizados
+
+1. Migración
+
+Permite crear y modificar las tablas de la base de datos. En este proyecto se utiliza para definir la estructura de la tabla de personas.
+
+2. Seeder
+
+Sirve para insertar datos iniciales en la base de datos y facilitar las pruebas del sistema.
+
+3. Factory
+
+Permite generar datos ficticios para probar el funcionamiento del proyecto sin utilizar información real.
+
+4. Modelo
+
+Representa una tabla de la base de datos y permite consultar, crear, actualizar y eliminar registros. En este proyecto se utiliza el modelo Persona.
+
+5. Blade
+
+Es el sistema de plantillas de Laravel que permite generar las páginas HTML. Se utiliza para mostrar el listado de personas y los formularios.
+
+6. Sesión
+
+Permite mantener al usuario autenticado mientras utiliza el sistema. Si cierra sesión, debe iniciar sesión nuevamente para acceder al listado de personas.
+
+7. CSRF
+
+Es una protección de Laravel que evita que otros sitios envíen solicitudes no autorizadas en nombre del usuario. Se utiliza mediante @csrf en los formularios.
+
+Métodos HTTP utilizados
+
+GET: permite consultar el listado de personas y mostrar los formularios.
+
+POST: permite guardar nuevas personas en la base de datos.
+
+PUT: permite actualizar la información de una persona existente.
+
+DELETE: permite eliminar una persona de la base de datos.
+
+Funcionamiento de la eliminación
+
+Para eliminar una persona se utiliza el método destroy() del controlador PersonaController.php.
+
+Primero se busca el registro mediante findOrFail(), después se elimina con delete() y finalmente se redirige al listado.
+
+En index.blade.php se agregó un botón Eliminar con una confirmación. Si el usuario acepta, se elimina el registro; si cancela, la información permanece.
